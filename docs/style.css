@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #008080;
+  background-image:
+    repeating-linear-gradient(45deg, rgba(255,255,255,0.03) 0 2px, transparent 2px 4px);
+  font-family: 'VT323', 'Courier New', monospace;
+  font-size: 20px;
+  color: #000;
+  min-height: 100vh;
+}
+
+.crt {
+  min-height: 100vh;
+}
+
+/* marquee bar */
+.topbar {
+  display: block;
+  background: #000;
+  color: #0f0;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 12px;
+  padding: 6px 0;
+  border-bottom: 2px solid #0f0;
+}
+
+.page {
+  max-width: 760px;
+  margin: 24px auto;
+  padding: 0 12px;
+}
+
+.window {
+  width: 100%;
+  background: #c0c0c0;
+  border: 3px outset #eee;
+  box-shadow: 4px 4px 0 rgba(0,0,0,0.4);
+}
+
+.titlebar {
+  background: linear-gradient(90deg, #000080, #1084d0);
+  color: #fff;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 11px;
+  padding: 6px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.winbtns span {
+  display: inline-block;
+  background: #c0c0c0;
+  color: #000;
+  border: 2px outset #eee;
+  width: 18px;
+  height: 16px;
+  text-align: center;
+  line-height: 12px;
+  margin-left: 3px;
+  font-size: 11px;
+}
+.winbtns .close { color: #800; }
+
+.content {
+  background: #ffffe1;
+  padding: 18px 22px 22px;
+}
+
+.banner {
+  text-align: center;
+  border-bottom: 2px dashed #800080;
+  padding-bottom: 12px;
+  margin-bottom: 10px;
+}
+
+.banner h1 {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 20px;
+  color: #ff00ff;
+  text-shadow: 2px 2px 0 #000080;
+  margin: 6px 0;
+  letter-spacing: 1px;
+}
+
+.tagline {
+  color: #008080;
+  font-size: 18px;
+  margin: 4px 0 0;
+}
+
+.navbar {
+  text-align: center;
+  background: #000;
+  color: #0ff;
+  padding: 6px;
+  margin: 12px 0;
+  font-size: 18px;
+  border: 2px inset #888;
+}
+
+.navbar a { color: #ff0; text-decoration: none; }
+.navbar a:hover { color: #fff; text-decoration: underline; }
+.navbar a.active { color: #0f0; }
+.navbar .sep { color: #555; margin: 0 6px; }
+
+.blink { animation: blink 1s step-start infinite; color: #f0f; }
+@keyframes blink { 50% { opacity: 0; } }
+
+hr.dashed {
+  border: none;
+  border-top: 2px dashed #800080;
+  margin: 14px 0;
+}
+
+.entries-list { display: flex; flex-direction: column; gap: 18px; }
+
+.entry-card {
+  background: #fff;
+  border: 2px groove #999;
+  padding: 12px 14px;
+}
+
+.entry-meta {
+  font-size: 15px;
+  color: #444;
+  display: flex;
+  gap: 14px;
+  margin-bottom: 4px;
+}
+
+.entry-mood { color: #a00; }
+
+.entry-title { margin: 4px 0; font-size: 26px; }
+.entry-title a { color: #0000ee; text-decoration: none; }
+.entry-title a:visited { color: #551a8b; }
+.entry-title a:hover { text-decoration: underline; }
+
+.entry-excerpt { font-size: 19px; line-height: 1.35; }
+
+.readmore {
+  display: inline-block;
+  margin-top: 6px;
+  color: #008000;
+  font-weight: bold;
+  text-decoration: none;
+}
+.readmore:hover { text-decoration: underline; }
+
+.entry-full { font-size: 19px; line-height: 1.45; }
+.entry-full .entry-title { font-size: 30px; color: #800080; }
+.entry-full p { margin: 10px 0; }
+.entry-full ul { margin: 10px 0; padding-left: 26px; }
+.entry-full a { color: #0000ee; }
+
+.footer {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 15px;
+}
+
+.counter {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #000;
+  color: #0f0;
+  padding: 4px 10px;
+  border: 2px inset #666;
+}
+
+.digits {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.under-construction {
+  color: #ff8c00;
+  font-weight: bold;
+}
+
+.webring { color: #555; }
+
+a { color: #0000ee; }
